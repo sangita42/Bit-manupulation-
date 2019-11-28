@@ -1,0 +1,9 @@
+#code
+for __ in range(0,int(input())):
+    n1,n2=map(int,(input().split()))
+    n=n1^n2
+    c=0
+    while(n):
+        c+=(n&1)
+        n=n>>1
+    print(c)    
